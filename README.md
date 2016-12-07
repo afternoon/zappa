@@ -3,8 +3,10 @@
 A simple, general purpose functional language.
 
 - Small, simple, expressive language which enforces good style
-- Compiled with LLVM
-- Statically-typed with type inference
+- Compiled with LLVM `coming soon`
+- Statically-typed with type inference `coming soon`
+- Simple concurrency with coroutines, channels and STM `coming soon`
+- Batteries-included standard library
 
 ## Syntax
 
@@ -35,6 +37,13 @@ A simple, general purpose functional language.
     <tr>
       <td>Strings</td>
       <td><code>"Hello"</code></td>
+    </tr>
+    <tr>
+      <td>Multiline strings</td>
+      <td>
+        <pre>"""No way to delay
+That trouble comin' every day"""</pre>
+      </td>
     </tr>
     <tr>
       <td>Characters</td>
