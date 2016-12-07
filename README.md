@@ -8,32 +8,116 @@ A simple, general purpose functional language.
 
 ## Syntax
 
-| Expression                  | Example                                         |
-| --------------------------- | ----------------------------------------------- |
-| Identifiers                 | `foo`, `toString`, `foo?`, `save!`              |
-| Type identifiers            | `Int`, `Bool`, `String`, `Date`, `List`         |
-| Integers                    | `1`, `2`, `274,877,906,944`                     |
-| Float, decimal, hex, octal  | `99.99`, `0d99.99`, `0xff`, `0o777`             |
-| Strings                     | `"Hello"`                                       |
-| Characters                  | `'x'`                                           |
-| Booleans                    | `true`, `false`                                 |
-| Arithmetic expressions      | `99 + 1 - 50`                                   |
-| Lists                       | `[1, 2, 3]`                                     |
-| List, string append         | `[1, 2] ++ [3, 4]`, `"Hello " ++ "World!"`      |
-| String interpolation        | `"Hello ${object}!"`                            |
-| Records                     | `{name: "Zappa", version: 1}`                   |
-| Record access               | `foo.bar`                                       |
-| Record update               | `{ person | name = "George" }`                  |
-| Boolean expressions         | `a == b`, `a != b`, `a <= b`                    |
-| Binding                     | `x = 99 + 1`                                    |
-| Functions                   | `square x = x * x`                              |
-| Anonymous functions         | `(x) -> x * x`                                  |
-| Conditional expressions     | `if a == b then 1 else 0`                       |
-| Pattern matching            | `case list.head l of`...                        |
-| Type declarations           | `type Point3D = {x: Float, y: Float, z: Float}` |
-| Modules                     | `module things`                                 |
-| Import                      | `import things`                                 |
-| Comments                    | `-- Watch out where the huskies go`             |
+<table>
+  <thead>
+    <tr>
+      <th>Expression</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Identifiers</td>
+      <td><code>foo</code>, <code>toString</code>, <code>foo?</code>, <code>save!</code></td>
+    </tr>
+    <tr>
+      <td>Type identifiers</td>
+      <td><code>Int</code>, <code>Bool</code>, <code>String</code>, <code>Date</code>, <code>List</code></td>
+    </tr>
+    <tr>
+      <td>Integers</td>
+      <td><code>1</code>, <code>2</code>, <code>274,877,906,944</code></td>
+    </tr>
+    <tr>
+      <td>Float, decimal, hex, octal</td>
+      <td><code>99.99</code>, <code>0d99.99</code>, <code>0xff</code>, <code>0o777</code></td>
+    </tr>
+    <tr>
+      <td>Strings</td>
+      <td><code>"Hello"</code></td>
+    </tr>
+    <tr>
+      <td>Characters</td>
+      <td><code>'x'</code></td>
+    </tr>
+    <tr>
+      <td>Booleans</td>
+      <td><code>true</code>, <code>false</code></td>
+    </tr>
+    <tr>
+      <td>Arithmetic expressions</td>
+      <td><code>99 + 1 - 50</code></td>
+    </tr>
+    <tr>
+      <td>Lists</td>
+      <td><code>[1, 2, 3]</code></td>
+    </tr>
+    <tr>
+      <td>List, string append</td>
+      <td><code>[1, 2] ++ [3, 4]</code>, <code>"Hello " ++ "World!"</code></td>
+    </tr>
+    <tr>
+      <td>String interpolation</td>
+      <td><code>"Hello ${object}!"</code></td>
+    </tr>
+    <tr>
+      <td>Records</td>
+      <td><code>{name: "Zappa", version: 1}</code></td>
+    </tr>
+    <tr>
+      <td>Record access</td>
+      <td><code>foo.bar</code></td>
+    </tr>
+    <tr>
+      <td>Record update</td>
+      <td><code>{ person | name = "George" }</code></td>
+    </tr>
+    <tr>
+      <td>Boolean expressions</td>
+      <td><code>a == b</code>, <code>a != b</code>, <code>a &lt;= b</code></td>
+    </tr>
+    <tr>
+      <td>Binding</td>
+      <td><code>x = 99 + 1</code></td>
+    </tr>
+    <tr>
+      <td>Functions</td>
+      <td><code>square x = x * x</code></td>
+    </tr>
+    <tr>
+      <td>Anonymous functions</td>
+      <td><code>(x) -&gt; x * x</code></td>
+    </tr>
+    <tr>
+      <td>Conditional expressions</td>
+      <td><code>if a == b then 1 else 0</code></td>
+    </tr>
+    <tr>
+      <td>Pattern matching</td>
+      <td>
+        <pre>case head l of
+  Just x -> "head is ${x}"
+  Nothing -> "list empty"</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Type declarations</td>
+      <td><code>type Point3D = {x: Float, y: Float, z: Float}</code></td>
+    </tr>
+    <tr>
+      <td>Modules</td>
+      <td><code>module things</code></td>
+    </tr>
+    <tr>
+      <td>Import</td>
+      <td><code>import things</code></td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td><code>-- Watch out where the huskies go</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ## `zappa` command line tool
 
