@@ -6,7 +6,7 @@ A simple, general purpose functional language.
 - Compiled with LLVM `coming soon`
 - Statically-typed with type inference `coming soon`
 - Simple concurrency with coroutines, channels and STM `coming soon`
-- Batteries-included standard library
+- Batteries-included standard library `coming soon`
 
 ## Syntax
 
