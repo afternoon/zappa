@@ -136,18 +136,10 @@ That trouble comin' every day"""</pre>
 $ zappa repl
 ```
 
-### Building
-
-Compile everything in the current directory (recursively) into a single binary:
+### Compiler
 
 ```sh
-$ zappa build
-```
-
-Build a single file:
-
-```sh
-$ zappa build foo.zp
+$ zappa make
 ```
 
 ### Package manager
